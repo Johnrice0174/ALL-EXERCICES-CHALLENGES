@@ -1,0 +1,36 @@
+body{
+	background-color: #e0e0eb;
+	margin: 0px;
+}
+
+header{
+	display: flex;
+	align-items: center;
+	background-image: url(http://www.idn-france.org/wp-content/uploads/2017/08/fond-bandeau-accueil-800x250.png);
+}
+img{
+	margin: 4px;
+}
+.hdtitle{
+	margin-left: 20%;
+	font-size: 60px;
+	font-family: 'Permanent Marker', cursive;
+}
+h2{
+	font-family: 'Merienda One', cursive;
+	color: #DF3A01;
+	font-size: 40px;
+	margin-left: 40px;
+}
+
+label, li, p{
+	font-family: 'Scheherazade', serif;
+	margin-left: 60px;
+	font-size: 26px;
+}
+.persolab, .edusp, .langsp{
+	font-weight: bold;
+}
+ol, ul{
+	margin-left: 50px;
+}

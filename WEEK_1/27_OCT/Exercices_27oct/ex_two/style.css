@@ -1,0 +1,43 @@
+body{
+	background-image: url(https://images.alphacoders.com/719/thumb-1920-719963.png);
+	font-size: 20px;
+	color: white;
+	margin-left: 15px;
+	font-family: 'Indie Flower', cursive;
+}
+h1{
+	color: red;
+	font-size: 50px;
+	text-decoration: underline;
+	font-family: 'Lobster', cursive;
+}
+img{
+	border: solid green 4px;
+	border-radius: 14px;
+	margin-left: 200px;	
+	padding: 14px
+	-webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+	-o-transition: all 1s ease; /* Opera */
+	transition: all 1s ease; 
+}
+img:hover{
+	border-color: yellow;
+	width: 500px;
+	-webkit-transform:scale(1.15); /* Safari et Chrome */
+	-moz-transform:scale(1.15); /* Firefox */
+	-ms-transform:scale(1.15); /* Internet Explorer 9 */
+ 	-o-transform:scale(1.15); /* Opera */
+	transform:scale(1.15); /*1.00 taille initiale, .15 +15% etc...*/
+}
+
+table{
+	border-radius: 10px;
+	border-color: white;
+	opacity: 2.0;
+	background-image: url(https://cdn.videvo.net/videvo_files/video/free/2012-09/thumbnails/hd1562_small.jpg);
+	box-shadow: 4px 4px #002b80;
+	/*visibility: hidden; rend invisible*/
+	/*display: none; rend invbisible*/
+}

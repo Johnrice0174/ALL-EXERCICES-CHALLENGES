@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dawwdd</title>
+</head>
+<body>
+	<!-- Embedded CSS -->
+	<style>
+		body{
+			font-size: 20px;
+		}
+		p{  /*property: value;*/
+			color: green;
+		}
+
+		div p {
+			border: 1px solid black;
+		}
+
+		.para4{
+			background-color: pink /*si il n'y a aucune autre propriété à la suite alors POINT VIRGULE INUTILE!! */
+		}
+		.para3:hover {
+			color: yellow;
+		}
+
+		.container > p{ /*Affect all direct children */
+			border: ;
+		}
+
+	</style>
+
+	<div class="container">
+	<!-- INLINE CSS -->
+		<div>
+			<P style="color: blue; border: solid 1px red;">LE RAP FR MGL !!!</P>
+			<p class="para1 para2 para4 para5">Sopram'baba de la Psy4</p>
+			<p class="para3">Sopram'baba de la Psy4</p>
+		</div>
+	</div>	
+
+	<p>Salam Chalom</p>
+	<p>Salam Chalom</p>
+	<p>Salam Chalom</p>
+
+	<label><em>< !-- On Constate que INLINE CSS est PRIORITAIRE, le EMBEDDED CSS n'agit pas sur le InlineCss --></em></label>
+</body>
+</html>

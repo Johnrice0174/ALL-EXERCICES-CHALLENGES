@@ -1,0 +1,14 @@
+body{
+	margin: 0px 20px 0px 20px;
+}
+h4{
+	text-align: center;
+	margin-bottom: 0px;
+}
+#char{
+	margin-left: 25%;
+	margin-right: 35%;
+}
+.behav{
+	text-align: end;
+}

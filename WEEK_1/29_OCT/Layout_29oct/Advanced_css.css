@@ -1,0 +1,33 @@
+* { /*Asterix concerne l'ensemble du code*/
+	box-sizing: border-box; /*permet de modifier les margin/padding sans affecter le witdh/height*/
+}
+
+.redbox{
+	border: 1px solid black;
+	background-color: #ff9980;
+	width: 20%;
+	margin: 50px 15px 15px 50px;
+	padding: 80px;;
+}
+
+.bluebox{
+	border: 1px solid black;
+	background-color: #66ccff;
+	width: 60%;
+	padding: 80px;
+	margin: 50px 15px 15px 50px;
+
+	position: relative;
+	top: -636px;
+	left: 400px;
+}
+
+.yellowbox{
+	border: 1px solid black;
+	background-color: #ffff99;
+	width: 87%;
+	margin: 50px 15px 15px 50px;
+	padding: 80px;
+	position: relative;
+	bottom: 600px;
+}

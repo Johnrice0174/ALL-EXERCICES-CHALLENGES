@@ -1,0 +1,44 @@
+@media screen and (max-width: 992px) {
+	body{
+		background-color: white;
+	}
+}
+
+.container{
+	margin: 50px;
+	border: solid red 4px;
+	/*width: 100vh;*/
+	padding: 6px;
+}
+
+.first{
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 60px;
+	background-color: #80dfff;
+	width: 100%;
+	height: 160px;
+	margin-top: -58px;
+}
+.second{
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 60px;
+	background-color: #80dfff;
+	width: 25%;
+	height: 160px;
+	position: relative;
+	left: 1050px;
+	margin-top: -55px;
+	margin-bottom: -55px;
+}
+.second > p{
+	position: relative;
+	top: 50px;
+}
+
+.third{
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 60px;
+	background-color: #80dfff;
+	width: 100%;
+	height: 160px;
+}
