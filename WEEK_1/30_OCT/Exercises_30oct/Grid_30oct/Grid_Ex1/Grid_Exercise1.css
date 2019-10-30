@@ -1,0 +1,74 @@
+/*display: grid;*/ /* grid = grille*/
+
+/*grid-template-colums: 1fr 1fr 1fr;*/
+/* fr = fraction*/
+/* 1fr > Number= size _ fr= number of columns*/
+
+/*grid-column-gap: 10px;*/ /* space between Each Column*/
+/*grid-row-gap: 10px;*/ /*space between each row*/
+/*grid-gap: 10px;*/ /*space between each rows & colums*/
+
+/*padding: 10px;*/ /*space between the grid and the container*/
+
+/*A placer dans chaque case/element de la grille*/
+/*grid-column: X/Y ou X/ span Y;*/ /*X/Y= setend seulement sur sa fraction | X/spanY= setend de X a Y*/
+/*grid-row: X/Y ou X/ span Y;*/ 
+
+* {
+	box-sizing: border-box;
+}
+
+.container{
+	border: solid transparent;
+	margin: 15px;
+	padding: 15px;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: auto auto;*/
+
+}
+
+.box{
+	height: 120px;
+}
+
+#redbox {
+	background-color: red;
+	border-radius: 14px;
+	/*width: 50%;*/
+	grid-column: 1/ span 2;
+	grid-row: 1;
+}
+
+#bluebox{
+	background-color: blue;
+	border-radius: 14px;
+	/*width: 50%;*/
+	grid-column: 3/ span 3;
+	grid-row: 1;
+} 
+
+#greenbox{
+	background-color: green;
+	border-radius: 14px;
+	/*width: 25%;*/
+	grid-column: 1/2;
+	grid-row: 2;
+} 
+
+#purplebox{
+	background-color: purple;
+	border-radius: 14px;
+	/*width: 75%;*/
+	grid-column: 2/ span 4;
+	grid-row: 2;
+} 
+
+#yellowbox{
+	background-color: yellow;
+	border-radius: 14px;
+	/*width: 100%;*/
+	grid-column: 1/ span 5;
+	grid-row: 3;
+}
