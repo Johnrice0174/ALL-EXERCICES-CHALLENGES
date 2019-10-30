@@ -1,0 +1,32 @@
+body{
+	border: solid 1px;
+	padding: 10px 20px 10px 20px;
+}
+.container{
+	display: grid;
+}
+
+ul, h3{
+	text-align: center;
+	color: black;
+	padding-bottom: 10px;
+}
+form{
+	padding-bottom: 80px;
+}
+div h1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 50px;
+}
+
+
+.citation{
+	border-left: solid 3px gray;
+}
+.cit{
+	padding-left: 15px;
+}
+
+.row .alert{
+	margin-bottom: 0px;
+}

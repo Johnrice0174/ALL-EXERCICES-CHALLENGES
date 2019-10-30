@@ -1,0 +1,67 @@
+body{
+	margin: 0px;
+}
+
+header{
+	background-image: url(https://cdn.thewirecutter.com/wp-content/uploads/2016/06/home-office-furniture-2x1-fullres--1024x512.jpg);
+	background-size: cover;
+	width: 1519px;
+	height: 700px;
+	margin-bottom: 50px;
+}
+
+.container {
+	padding-top: 20px;
+}
+a {
+	padding-right: 625px;
+}
+
+#p_acc{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 35px;
+	margin-right: 500px;
+	margin-left: 500px;
+	margin-top: 13%;
+}
+.Get{
+	background-color: green;
+	border: none;
+	width: 110px;
+	height: 45px;
+	color: white;
+	margin-right: 60px;
+}
+.See{
+	
+	background-color: transparent;
+	border: solid 2px white;
+	width: 110px;
+	height: 45px;
+	color: white;
+}
+.buttons{
+	display: flex;
+	align-items: center;
+	margin-left: 40%;
+}
+
+#fp, #sp, #tp{
+	display: inline-block;
+	padding: 50px;
+}
+#fp{
+	margin-left: 200px;
+	position: relative;
+	bottom: 220px;
+}
+#sp{
+	position: relative;
+	bottom: 320px;
+}
+
+i{
+   width: 200px;
+}
