@@ -1,0 +1,174 @@
+body{
+	margin: 0;
+}
+       /* --------------- HEADER SECTION ----------------*/
+
+header{
+	background-image: url(https://thecedaliusgroup.com/wp-content/uploads/2014/08/88888-526-Business-inRed.jpg);
+	background-size: cover;
+	margin: 0px;
+	width: 100%;
+	padding: 20px 0px 150px 20px;
+}
+header li{
+	color: white;
+	font-weight: bold;
+	list-style: none;
+	display: inline-block;
+}
+li span{
+	color: grey;
+	padding: 20px;
+}
+ul {
+	text-align: center;
+	margin-bottom: 105px;
+}
+.navlogo{
+	padding-right: 100px;
+}
+.fnb{
+	padding-right: 70px;
+}
+.fnl{
+	padding-right: 20px;
+}
+.fnh, .fnfj, .fnpj, .fnp{
+	padding-right: 40px;
+}
+
+header a{
+	text-decoration: none;
+	color: white;
+}
+header h1{
+	text-align: center;
+	color: white;
+	font-family: 'Bree Serif', serif;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+header p{
+	color: white;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#wanted{
+	border-radius: 5px;
+	padding: 7px;
+	width: 270px;
+}
+#place{
+	border-radius: 5px;
+	padding: 7px;
+	width: 200px;
+}
+#Sub{
+	color: white;
+	border-radius: 5px;
+	padding: 7px;
+	width: 110px;
+	background-color: #58ACFA;
+}
+form{
+	display: flex;
+	justify-content: center;
+}
+
+#wanted, #place, #Sub{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+		/*----------------NAV TWO SECTION -------------------*/
+
+nav{
+	background-color: #58ACFA;
+	margin-top: -16px;
+}
+nav li{
+	list-style: none;
+	color: white;
+	font-weight: bold;
+	font-family: Arial;
+	border-right: solid 1px white;
+	border-left: solid 1px white;
+}
+nav ul{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+nav img{
+	padding-bottom: 15px;
+}
+
+#Finance{
+	border-right: none;
+} 
+#Health{
+	border-left: none;
+}
+		/*-------------- MAIN CONTENT ------------------------*/
+
+.containermain{
+	padding: 0px 250px 100px 250px;
+}
+.containermain h1{
+	font-family: Arial;
+	text-align: center;
+}
+.containermain hr{
+	margin-left: 450px;
+	margin-right: 450px;
+	margin-bottom: 30px;
+}
+
+.tab{
+	display: flex;
+	justify-content: center;
+}
+td img{
+	padding-left: 45%;
+}
+
+table{
+	margin-bottom: 50px;
+}
+
+#Joblist{
+	border-radius: 5px;
+	padding: 7px;
+	width: 110px;
+	color: white;
+	background-color: #58ACFA;
+	margin-left: 45%;
+}
+
+		/* --------------- FOOTER SECTION -------------------*/
+
+footer{
+	background-color: #f0f0f5;
+}
+
+footer h1{
+	font-family: Arial;
+	text-align: center;
+	padding-top: 80px;
+}
+footer hr{
+	margin-left: 725px;
+	margin-right: 725px;
+}
+
+.containerfooter{
+	font-family: Arial;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 40px;
+	padding: 60px 80px 50px 80px;
+}

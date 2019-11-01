@@ -1,0 +1,139 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	background-color: #fff2e6;
+}
+
+.About, .Portfolio, .Blog, .Team, footer, hr{
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+	/* NAVBAR BARRE DE NAVIGATION */
+
+
+    /* PRESENTATION SECTION AFTER NAV */
+.jumbotron {
+	background-image: url(https://zupimages.net/up/19/44/vkjb.jpg);
+	background-size: cover;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+}
+
+
+	/* ABOUT SECTION */
+
+.About h1 {
+	color: #ffbb33;
+	margin-top: 60px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.About label{
+	padding-left: 15px;
+}
+.Desc{
+	border-left: solid 2px #009999;
+	padding: 50px 0px 70px 20px;
+	margin-left: 10px;
+	position: relative;
+	left: 250px;
+	bottom: 290px;
+}
+.Desc h3{
+	color: #009999;
+}
+.Desc p {
+	font-size: 14px;
+}
+
+.profil img{
+	border-radius: 50%;
+}
+
+
+	/* PORTFOLIO SECTION */
+.Portfolio{
+	margin-bottom: 60px;
+}
+.Portfolio h1 {
+	color: #ffbb33;
+	margin-top: 60px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.containergal{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+.portimg {
+	cursor: pointer;
+	display: inline-block;
+	transition: all 0.3s linear;
+}
+.portimg:hover {
+	-webkit-box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+	-moz-box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+	-o-box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+	box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+}
+
+	/* BLOG SECTION */
+
+.Blog h1 {
+	margin-bottom: 60px;
+	text-align: center;
+	color: #ffbb33;
+}	
+#link{
+	background-color: lightgrey;
+}
+.containerblg{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	position: relative;
+	right: 110px;
+	margin-bottom: 60px;
+}
+	/* TEAM SECTION */
+
+.Team h1 {
+	color: #ffbb33;
+	margin-top: 60px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.gridteam{
+  	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr;
+  	margin-bottom: 80px;
+}
+	/* FOOTER CONTACT SECTION */
+
+footer h1 {
+	color: #ffbb33;
+	padding-top: 40px;
+}
+#footer{
+	display: flex;
+	align-self: center;
+}
+form{
+	padding-left: 60px;
+}
+#fn, #em{
+	width: 500px;
+}
+textarea{
+	width: 500px;
+}
+#sb{
+	width: 500px;
+	background-color: orange;
+	border-radius: 10px;
+}
