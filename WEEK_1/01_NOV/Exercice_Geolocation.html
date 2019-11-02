@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geolocation Coordinates</title>
+	<link rel="icon" type="img" href="https://image.flaticon.com/icons/png/512/14/14500.png"/>
+</head>
+<body style="padding-left: 20px; background-image: url(https://i.pinimg.com/originals/a2/75/fb/a275fba20059e521fba9a889a72a5075.jpg); background-size: cover;">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpJHn83c89H9WqCiF8OtgnNpM1Lrr-f1lulwNBnQd56niu78fB&s">
+	<h4 style="padding-left: 100px; color: red;">Click the below button <span style="color: pink">"get geolocation"</span> to <span style="color: yellow">get</span> your exact coordinates :</h4>
+
+	<button style="border-radius: 5px; background-color: lightblue; font-weight: bold; padding: 3px; margin-left: 280px;" onclick="getLocation()">Get geolocation</button>
+
+	<p id="result" style="color: lightgreen; font-weight: bold;"></p>
+
+
+	<script>
+		var x = document.getElementById("result");
+
+		function getLocation() {
+		  	if (navigator.geolocation) {
+		    navigator.geolocation.getCurrentPosition(showPosition);
+		  	} 
+		  	else { 
+		    x.innerHTML = "Geolocation is not supported by this browser.";
+		  	}
+		}
+
+		function showPosition(position) {
+	  		x.innerHTML = "Latitude: " + position.coords.latitude + 
+	  		"<br>Longitude: " + position.coords.longitude;
+	  	}
+	</script>
+</body>
+</html>
