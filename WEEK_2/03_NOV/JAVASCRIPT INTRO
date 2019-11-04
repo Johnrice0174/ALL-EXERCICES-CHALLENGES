@@ -1,0 +1,66 @@
+JAVASCRIPT TYPES
+-----------------
+1. Number (blue color)
+2. String "text=string is always between 2guillemets" (red color)
+3. Boolean (true/false)
+4. Undefined
+5. Null
+6. Symbol (new in ECMAScript 6)
+7. Object
+
+JAVASCRIPT COMPARISONS
+-----------------------
+!==
+!==
+===
+>=
+<=
+>
+<
+
+JAVASCRIPT VARIABLES
+---------------------
+var
+let (new in ECMAScript 6)
+const (new in ECMAScript 6)
+
+JAVASCRIPT CONDITIONALS
+------------------------
+
+
+<!-- OTHERS INFOS =>
+
+Slash Caractere = Affiche le caractere :
+exemple pour eviter le probleme de syntax :
+'This isn/'t very nice' = This isn't very nice.
+
+10 + "34" = 1034 / 10 - "3" = 7 } EVITEZ DE FAIRE ÇA
+Opérerez NUMBERS WITH NUMBERS et STRINGS WITH STRINGS !!
+
+BOOLEAN EXAMPLE : 3 > 2 = TRUE / 6 < 4 = FALSE
+5 = 5 = ERROR! car il faut 5 === 5 = TRUE
+3 !== 3 = FASLE / 5 !== 7 = TRUE
+DOUBLE EQUAL = QUESTION / THREE EQUALS = HAVE THEY THE SAME TYPE (int, float...) AND VALUES ? if Yes so TRUE.
+
+x=1 = 1 / y=2 = 2 / console.log(x+y) = 3 =O
+console.log() = AFFICHER 
+
+alert() = AFICHER EN POP-UP !
+alert("Hello") = Afficher en Pop-Up Hello 
+
+prompt("Are you enjoying Coding");
+"Yes"
+var name = prompt("Enter Name:") = Pop-up ou on peut ecrire
+
+var = yourName et var = your_name (CORRECT SYNTHAX comme en C)
+
+x = "five" ERROR !!
+
+functionDeclaration functionName(arguments){
+	var varName = type + value;
+	return varName;
+}
+var varName = FunctionName(value);
+alert(final_answer);
+
+ARRAY = GROUP OF STRINGS! et se ferme par [] !

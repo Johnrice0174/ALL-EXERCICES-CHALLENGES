@@ -1,0 +1,25 @@
+body{
+	background-image: url(https://image.freepik.com/free-vector/math-background_23-2148146940.jpg);
+}
+
+h1, h3{
+	background-color: beige;
+	text-align: center;
+	font-family: ARIAL;
+	color: red;
+}
+h3{
+	color: blue;
+}
+
+.calc_border{
+	margin: 100px 600px 50px 600px;
+	background-color: beige;
+	padding: 10px;
+	border: groove orange 4px;
+}
+button{
+ 	font-family: ARIAL;
+ 	font-weight: bold;
+ 	padding: 20px;
+}
