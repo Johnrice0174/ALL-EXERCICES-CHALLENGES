@@ -1,0 +1,45 @@
+body{
+	background-color: #b38f00;
+	padding: 0px;
+}
+
+h1{
+	font-family: 'Yeon Sung', cursive;
+	text-align: center;
+	font-size: 60px;
+	color: white;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+h1 #bluespan{
+	color: blue;
+}
+h1 #redspan{
+	color: red;
+}
+header img{
+	width: 100px;
+	height: 60px;
+	position: relative;
+	top: 20px;
+}
+header{
+	display: flex;
+	justify-content: center;
+}
+
+.done {
+	text-decoration: line-through;
+	font-weight: normal;
+}
+
+.doIt {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/*#root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}*/
