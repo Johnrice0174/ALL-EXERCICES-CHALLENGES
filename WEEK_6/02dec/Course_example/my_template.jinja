@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My marketplace</title>
+    <style>
+        {{ additional_css }}
+    </style>
+</head>
+<body>
+
+    <ul class="products-list">
+        {% for product in products %}
+        <li class="product">
+            <p>{{ product['name'] }} (${{ product['price'] }})</p>
+            {% if product['remains'] %}
+            <button class="buy-button" type="button">Buy !</button>
+            {% else %}
+            <button class="buy-button" type="button" disabled>Buy !</button>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

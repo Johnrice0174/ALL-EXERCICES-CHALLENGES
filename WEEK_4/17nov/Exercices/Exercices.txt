@@ -1,0 +1,16 @@
+EXERCICES !!
+
+EX 1) 
+print("Hello world\n" *4)
+
+EX 2) 
+288
+
+EX 3)
+
+name = "Adrian John"
+age = 20
+shoe_size = 43
+info = print("Chalom Salam! My name is %s and I am %d! I am tall and even if you don't care my shoe size is %d" % (name, age, shoe_size))
+
+EX 4)

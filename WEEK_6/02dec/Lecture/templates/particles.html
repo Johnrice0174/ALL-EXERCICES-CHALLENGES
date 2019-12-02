@@ -1,0 +1,48 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Universe</title>-->
+<!--    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5y4PNw72yv-hge_rNWq3ap3Tt1Ay5uvd8nGBP_v6JiWtprz_S&s" type="image/gif" sizes="16x16">-->
+<!--</head>-->
+<!--<body>-->
+<!--    {% for category in particles.keys() %}-->
+<!--        <h3>{{ category }}</h3>-->
+<!--    {% endfor %}-->
+<!--</body>-->
+<!--</html>-->
+
+<!-- ---------------------------------------------------------------------------------------- -->
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Universe</title>-->
+<!--    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5y4PNw72yv-hge_rNWq3ap3Tt1Ay5uvd8nGBP_v6JiWtprz_S&s" type="image/gif" sizes="16x16">-->
+<!--</head>-->
+<!--<body>-->
+<!--    {% for category in particles %}-->
+<!--        <h3>{{ category }}</h3>-->
+<!--    <ul>-->
+<!--        {% for particle in particles[category] %}-->
+<!--            <li>{{ particle }}</li>-->
+<!--        {% endfor %}-->
+<!--    </ul>-->
+<!--    {% endfor %}-->
+<!--</body>-->
+<!--</html>-->
+
+<!-- ---------------------------------------------------------------------------------------- -->
+{% extends 'base.html' %} <!-- comme importer les elements d'un fichier -->
+
+{% block my_block %}
+    {% for category in particles %}
+        <h3>{{ category }}</h3>
+    <ul>
+        {% for particle in particles[category] %}
+            <li>{{ particle }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+{% endblock %}

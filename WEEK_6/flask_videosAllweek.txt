@@ -1,0 +1,16 @@
+# micro framework of python with small libraries
+# (django is a massive framework)
+
+# on cmd
+mkdir myproject
+cd myproject
+mac: python -m venv foldername // win: py -3 -m venv foldername
+
+forldername\Scripts\activate # active the venv
+
+pip --version // pip3 --version
+
+pip install flask
+
+WARNING: You are using pip version 19.2.3, however version 19.3.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.

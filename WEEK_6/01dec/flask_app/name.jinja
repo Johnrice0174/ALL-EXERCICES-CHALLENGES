@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>YourIndex</title>
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5y4PNw72yv-hge_rNWq3ap3Tt1Ay5uvd8nGBP_v6JiWtprz_S&s" type="image/gif" sizes="16x16">
+    </head>
+    <body style="background-color: brown">
+        <h1 style="color: lightblue"> La Paix du Seigneur soit sur vous {{ name }} </h1>
+        <h1 style="color: white"> {{ name }} השלום עליכם ורחמנות האל וברכתו </h1>
+        <h1 style="color: red"> {{ name }} السلام عليكم ورحمة الله وبركاته </h1>
+        {% if length < 20 %}
+            <h1> Votre nom contient {{ length }} caracteres </h1>
+        {% else %}
+            <h1> Your name is so f*c#!ng long </h1>
+        {% endif %}
+    </body>
+</html>

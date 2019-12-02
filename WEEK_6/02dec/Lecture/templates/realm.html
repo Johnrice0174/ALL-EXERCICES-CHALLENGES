@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Universe</title>
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5y4PNw72yv-hge_rNWq3ap3Tt1Ay5uvd8nGBP_v6JiWtprz_S&s" type="image/gif" sizes="16x16">
+    </head>
+    <body>
+        {% if realm == 'Quantum' %}
+            <h1>Welcome to the {{ realm }} realm; Interferences and spooky stuff</h1>
+        {% elif realm == 'Classical' %}
+            <h1>Welcome to the {{ realm }} realm; Nothing out of the Ordinary</h1>
+        {% else %}
+            <h1> Peu importe ca me soule </h1>
+        {% endif %}
+    </body>
+</html>

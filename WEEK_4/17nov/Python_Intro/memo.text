@@ -1,0 +1,46 @@
+class Dog
+---------
+name -> string
+color -> string
+age -> int
+
+
+bark()
+fetch()
+
+
+
+my_Dog = new Dog("Rex", "brown", "1")
+your_dog = new Dog("Tandi", "black and white", "11")
+
+my_dog.bark()
+"WOOF WOOF"
+
+my_dog.name
+"Rex"
+
+-------------------------
+
+name = "John"
+
+name = new String(value)
+
+
+
+class Strings
+--------------
+value
+
+capitalize()
+upper()
+lower()
+replace()
+etc...
+
+functions
+methods
+
+
+-------------------------
+string.splice() #javascipt
+

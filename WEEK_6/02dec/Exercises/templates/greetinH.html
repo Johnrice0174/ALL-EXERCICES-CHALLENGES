@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Greetin Page</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5y4PNw72yv
+        -hge_rNWq3ap3Tt1Ay5uvd8nGBP_v6JiWtprz_S&s" type="image/gif" sizes="16x16">
+</head>
+<body style="background-color: lightgrey">
+        {% if hour >= '8' and hour < '13' %}
+            <h1 style="color: yellow; font-size: 40px; text-align: center;">! GOOD MORNING !</h1>
+            <p style="color: lightblue; font-size: 20px; text-align: center;">Have a good day !</p>
+        {% elif hour >= '13' and hour < '17' %}
+            <h1 style="color: orange; font-size: 40px; text-align: center;">! GOOD AFTERNOON !</h1>
+            <p style="color: brown; font-size: 20px; text-align: center;"> Have courage for the rest of the day :) </p>
+        {% elif hour >= '17' and hour < '21' %}
+            <h1 style="color: blue; font-size: 40px; text-align: center;">! GOOD EVENING !</h1>
+            <p style="color: blue; font-size: 20px; text-align: center;"> Take rest or have fun ! ;) </p>
+        {% else %}
+            <h1 style="color: black; font-size: 40px; text-align: center;">! GOOD NIGHT !</h1>
+            <p style="color: black; font-size: 20px; text-align: center;"> Have beautiful dreams </p>
+        {% endif %}
+</body>
+</html>
