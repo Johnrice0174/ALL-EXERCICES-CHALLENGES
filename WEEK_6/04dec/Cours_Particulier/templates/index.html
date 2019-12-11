@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Market Form</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5y4PNw72yv-hge_rNWq3ap3Tt1Ay5uvd8nGBP_v6JiWtprz_S&s" type="image/gif" sizes="16x16">
+    <!-- <link href="{{url_for('static', filename='style.css')}}"> -->
+    <style>{{ csss }}</style>
+<body>
+    <h1> Add your product to the shop</h1>
+    <form method="POST"> <!-- POST cause idk -->
+        {{ form.name.label }}
+        {{ form.name }}
+
+        {{ form.price.label }}
+        {{ form.price }}
+
+        {{ form.category.label }}
+        {{ form.category }}<br><br>
+
+        {{ form.stock.label }}
+        {{ form.stock }}
+
+        {{ form.submit }}
+    </form>
+</body>
+</html>

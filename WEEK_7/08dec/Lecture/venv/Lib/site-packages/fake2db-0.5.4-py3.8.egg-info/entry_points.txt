@@ -1,0 +1,3 @@
+[console_scripts]
+fake2db = fake2db.fake2db:main
+

@@ -1,0 +1,46 @@
+ORM = Object Relationnal Mapping
+It is an Interface between Python and Database - we use sqlalchemy
+1) Connection - 
+db
+
+2) Tables - class |  class user (db.models)
+
+3) Migration - Alchemy prepare all the SQL (tables etc...) and execute it/migrate it to
+the database
+
+4) Query
+
+venv\scripts\activate
+set FLASK_APP=run.py
+flask db init
+flask db migrate -m 'first_migration_booktable' (it is like a git commit)
+flask db upgrade (now we have table in the database)
+psql -U postgres postgres (enter into db)
+SELECT * FROM book (verify-display the table)
+\q 
+
+flask shell
+app
+from app import db
+from app.models import Book
+db
+Book
+zohar = Book(title='Zohar',author='Rabbi Shimon Bar Yohai',price=0)
+db.session.add(zohar)
+Book.query.all()
+db.session.commit() #SI ON FAIT PAS COMMIT, RIEN NEST SAUVEGARDÉ
+moreh = Book(title='Moreh Nevukhim',author='Rabbi Moshe Ben Maimon',price=10)
+db.session.add(moreh)
+Book.query.all()
+db.session.commit()
+exit()
+psql -U postgres postgres (enter into db)
+SELECT * FROM book (display the table)
+\q 
+Book.query.get(1) #ou (2) etc selon le nombre de livre
+Book.query.filter_by(author='Rabbi Shimon Bar Yohai')
+Book.query.filter_by(author='Rabbi Shimon Bar Yohai').first()
+Book.query.filter_by(author='Rabbi Shimon Bar Yohai').all()
+Book.query.filter_by(author='Rabbi Shimon Bar Yohai').last()
+
+

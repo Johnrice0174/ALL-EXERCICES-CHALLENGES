@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block my_block %}
+    <form method="POST">
+        {{ form.name.label }}
+        {{ form.name(size=32) }}<br>
+
+        {{ form.category.label }}
+        {{ form.category(size=32) }}<br>
+
+        {{ form.submit() }}
+    </form>
+
+ {% endblock %}

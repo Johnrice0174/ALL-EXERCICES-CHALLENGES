@@ -1,0 +1,25 @@
+_____________POSTGRESQL_______________
+--ouvrir command
+--tapez psql -U postgres postgres
+--\l pour voir les tables
+--\q pour quitter psql
+--\h pour l'aide memoire des commandes SQL
+--\? pour l'aide memoire des commandes psql
+--\du pour afficher list of roles attributes
+
+________________DATABASE__________________
+--create database <name> //to create database
+--drop database <name> //to delete database
+--\c <name> to connect to database
+
+_______________________TABLES_______________________________
+--CREATE TABLE <NAME>(category int, category2 varchar(225),category varcharr(255));
+--INSERT INTO <table> (comlun) VALUES(values)
+--SELECT * FROM <NAME>
+--DROP TABLE <Name> (supprimer tab)
+--TRUNCATE TABLE table_name; (suppr toutes les données du tab mais PAS le tab)
+--alter table <nametable> add <columns><type>; // rajouter des columns
+--update <table> set <column> = '..' where <other column>='...';
+--select * from <table> OR    DER B	Y <column> ASC or DESC;
+ASC = Ascendant (lower to higher) // DESC = Descendant (higher to lower)
+--SELECT <col1>, <col2> FROM <table> ORDER BY price ASC;
