@@ -1,0 +1,83 @@
+{% extends 'blog/base.html' %}
+	{% block styles %}
+    {% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'streaming/style.css' %}">
+	{% endblock %}
+
+
+		{% block homevid %}
+			<!-- VIDEO BACKGROUND -->
+			<video autoplay muted loop id="myVideo">
+				<source src="{% static 'streaming/HeaderBackground_Halo__The_EPIC_Saga__Ultimate_Fan-Made_Trailer__HD_720p_60fps_hd.mp4' %}" type="video/mp4">
+			</video>
+
+			<!-- Optional: some overlay text to describe the website -->
+			<div class="content">
+				<h1>HALO STREAMING & FAN WORLD</h1>
+					<p>Let's see all the Halo Movies, Videos for FREE [VF & VO(STFR)]</p>
+					<!-- Use a button to pause/play the video with JavaScript -->
+					<!-- <button id="myBtn" onclick="myFunction()">Pause</button> -->
+			</div>
+
+			<!-- VIDEOS -->
+			<main style="margin-left: 15%; margin-right: 15%;">
+				<h3 style="color: white" id="movies">HALO MOVIES</h3><br>
+				<div class="grid_one_container">
+					{% for movie in movies %}
+					<div class="grid_one_item">
+						<label class="lab-grid">{{ movie.title }}</label><br>
+						<a href="{% url 'movies-watch' movie.id %}"><img src="{{ movie.image }}" width="250" height="300"></a>
+					</div>
+					{% endfor %}
+				</div>
+
+				<!-------><hr><!------->
+				<h3 style="color: white" id="series">HALO SERIES</h3>
+				<div class="grid_two_container">
+					<div class="grid_two_item">
+						<label class="lab-grid">Halo Legends</label><br>
+						<a href=""><img src="https://www.shoutfactory.com/s3_images/images/4bad23cf-6f67-e711-9448-0ad9f5e1f797/HaloLegends.DVD.Cover.72dpi.jpg" width="250" height="300"></a>
+					</div>
+				</div>
+
+				<!-------><hr><!------->
+				<h3 style="color: white" id="trailers">HALO TRAILERS</h3>
+				<p></p>
+			</main>
+    <!-------------- STYLE ---------------------->
+			<style>
+				.lab-grid {
+					color: lightgrey;
+					background-color: #424242;
+				}
+				/*--------- grid one movies ---------*/
+				.grid_one_container {
+				  display: grid;
+				  grid-template-columns: auto auto auto;
+				  background-color: #6A0404;
+				  padding: 10px;
+				}
+				.grid_one_item {
+				  background-color: #730505;
+				  border: 1px solid rgba(0, 0, 0, 0.8);
+				  padding: 20px;
+				  font-size: 30px;
+				  text-align: center;
+				}
+				/*--------- grid two series ---------*/
+				.grid_two_container {
+				  display: grid;
+				  grid-template-columns: auto auto auto;
+				  background-color: #03077D;
+				  padding: 10px;
+				}
+				.grid_two_item {
+				  background-color: #1303A5;
+				  border: 1px solid rgba(0, 0, 0, 0.8);
+				  padding: 20px;
+				  font-size: 30px;
+				  text-align: center;
+				}
+			</style>
+		{% endblock %}
+	    {% block sidebar %}{% endblock %}
