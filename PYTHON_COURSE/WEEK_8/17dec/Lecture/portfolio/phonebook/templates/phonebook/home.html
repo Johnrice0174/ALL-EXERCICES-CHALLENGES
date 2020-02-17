@@ -1,0 +1,13 @@
+{% extends 'phonebook/base.html' %}
+
+{% load static %}
+
+{% block main %}
+<h1 style="color:white;">HOME PAGE</h1>
+<div>
+    <br>
+    <!-- <a href="/home"><h2>Home</h2></a> --> <!-- WORK BUT NOT PRO-->
+    <a href="{% url 'index' %}"><h2>Index</h2></a>
+    <a href="{% url 'person' %}"><h2>Person</h2></a>
+</div>
+{% endblock %}

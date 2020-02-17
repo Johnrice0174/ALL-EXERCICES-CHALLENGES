@@ -1,0 +1,18 @@
+{% extends 'phonebook/base.html' %}
+
+{% load static %}
+
+{% block main %}
+<h1 style="color:white;">PHONE BOOK</h1>
+
+{% for person in persons %}
+    <p style="color: yellow;">{{person.last_name}}, {{person.first_name}}</p>
+{% endfor %}
+
+<div>
+    <br>
+    <!-- <a href="/home"><h2>Home</h2></a> --> <!-- WORK BUT NOT PRO-->
+    <a href="{% url 'index' %}"><h2>Index</h2></a>
+    <a href="{% url 'home' %}"><h2>Home</h2></a>
+</div>
+{% endblock %}

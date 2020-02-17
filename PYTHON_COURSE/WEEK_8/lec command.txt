@@ -1,0 +1,56 @@
+py -3 -m venv uselessvenv
+uselessvenv\scripts\activate
+pip install django
+python -m django --version
+django-admin startproject portfolio
+dir
+cd portfolio
+dir
+	(you can add number after this command for... idk)
+
+python manage.py startapp blog  (create another app in the same project)
+
+DATABASE (SQLite3)
+#via DB Browser open db.sqlite3 puis ecrire dans le terminal ce qui est ci dessous#
+python manage.py makemigrations projectname
+python manage.py migrate
+python manage.py shell
+
+from projectname.models import Class
+
+Creer un Objet
+- - - - - - - - - 
+p1 = Person(first_name = "John", last_name="Rice", phone_number="00972584002719")
+p1
+type(p1)
+p1.save() => SAVE donne une ID à la personne crée, exemple ci dessous
+
+p1 = Person(first_name = "Alexandra Jane", last_name="Bitom", phone_number="435446576845435")
+p1.first_name (Alexandra Jane)
+p1.id (rien)
+p1.save()
+p1.id (2)
+-----------------------------
+p = Person.objects.all()
+p = Person.objects.get()
+-----------------------------
+
+p = Person.objects.get(first_name="John")
+p.last_name ("Rice")
+
+----------------------------
+import faker
+faker = faker.Faker()
+--------------------------
+
+for i in range(100):
+	p = Person(first_name=faker.first_name(), last_name=faker.last_name(), phone_number=faker.phone_number())
+
+p.save()
+#CELA A CRÉE 100 FAUSSES PERSONNES DANS LA DATABASE!!!#
+# UTILE POUR TROMPER DES ENQUETEURS, OU AUTRE AFIN DE PROTEGER LES VRAIS CLIENTS BREF TRUC DE OUF#
+
+------------------
+pip freeze (Show ALL PLUGINS Installed in our Project)
+
+pip freeze >> requirements.txt (IDEM Just in a file !!)

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load crispy_forms_tags %}
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/1090164813672665089/8tCqtXLI.jpg" type="image/gif" sizes="16x16">
+</head>
+<body style="background: url('http://lesmapdedofus.e-monsite.com/medias/album/dofus-14.png')">
+    <img src="https://zupimages.net/up/20/01/u152.png" alt="Login" style="margin-left: 44%; margin-right: 35%;">
+    <form method="post" style="text-align: center; border: solid 2px orange; margin: 5% 42% 5% 42%;">
+        {% csrf_token %}
+<!--        {{ formed|crispy }}-->
+                <input type="hidden" name="csrfmiddlewaretoken" value="XaNdJdSpju0hm7C1snNHtxaZOc2Sspm5H6sMleYnXCZsnhN4I4BYRXz8jlpmUpLj">
+
+
+            <div id="div_id_username" class="form-group">
+                <label for="id_username" class=" requiredField" style="color: white">Username</label> <div class=""> <input type="text" name="username" maxlength="150" autofocus class="textinput textInput form-control" required id="id_username"> <br> </div> </div> <div id="div_id_email" class="form-group"> <br>
+                <label for="id_password1" class=" requiredField" style="color: white">Password</label> <div class=""> <input type="password" name="password1" autocomplete="new-password" class="textinput textInput form-control" required id="id_password1"> </div> </div> <div id="div_id_password2" class="form-group"></div>
+            </div><br>
+        <button type="submit" href="#">Login</button><br><a href="/register">or Register</a>
+    </form>
+</body>
+</html>

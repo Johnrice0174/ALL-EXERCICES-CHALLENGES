@@ -1,0 +1,16 @@
+{% extends 'phonebook/base.html' %}
+
+{% load static %}
+
+{% block main %}
+<h1 style="color: white;">INDEX PAGE</h1>
+<img src="{% static 'images/jumanjirock.jpg' %}" alt="My Image" width="400" height="400">
+<div>
+    <br>
+    <!-- <a href="/home"><h2>Home</h2></a> --> <!-- WORK BUT NOT PRO-->
+    <a href="{% url 'home' %}"><h2>Home</h2></a>
+    <a href="{% url 'person' %}"><h2>Person</h2></a>
+</div>
+
+
+{% endblock %}

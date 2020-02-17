@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load crispy_forms_tags %}
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/1090164813672665089/8tCqtXLI.jpg" type="image/gif" sizes="16x16">
+</head>
+<body style="background: url('http://retro-farming.e-monsite.com/medias/images/wiki-background.jpg')">
+    <img src="https://zupimages.net/up/20/01/if40.png" alt="Register" style="margin-left: 37%; margin-right: 35%;">
+    <form method="post" style="text-align: center; border: solid 2px; margin: 5% 35% 0% 35%;">
+        {% csrf_token %}
+<!--        {{ formed|crispy }}-->
+                <input type="hidden" name="csrfmiddlewaretoken" value="XaNdJdSpju0hm7C1snNHtxaZOc2Sspm5H6sMleYnXCZsnhN4I4BYRXz8jlpmUpLj">
+
+
+            <div id="div_id_username" class="form-group">
+                <label for="id_username" class=" requiredField">Username<span class="asteriskField">*</span> </label> <div class=""> <input type="text" name="username" maxlength="150" autofocus class="textinput textInput form-control" required id="id_username"> <br><small id=" hint_id_username" class="form-text text-muted">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</small> </div> </div> <div id="div_id_email" class="form-group"> <br>
+                <label for="id_email" class=" requiredField">Email<span class="asteriskField">*</span> </label> <div class=""> <input type="email" name="email" class="emailinput form-control" required id="id_email"> </div> </div> <div id="div_id_password1" class="form-group">
+                <label for="id_password1" class=" requiredField">Password<span class="asteriskField">*</span> </label> <div class=""> <input type="password" name="password1" autocomplete="new-password" class="textinput textInput form-control" required id="id_password1"> <small id="hint_id_password1" class="form-text text-muted"><ul style="list-style: none;"><li>Your password can’t be too similar to your other personal information.</li><li>Your password must contain at least 8 characters.</li><li>Your password can’t be a commonly used password.</li><li>Your password can’t be entirely numeric.</li></ul></small> </div> </div> <div id="div_id_password2" class="form-group">
+                <label for="id_password2" class=" requiredField">Password confirmation<span class="asteriskField">*</span> </label> <div class=""> <input type="password" name="password2" autocomplete="new-password" class="textinput textInput form-control" required id="id_password2"><br>   <small id="hint_id_password2" class="form-text text-muted">Enter the same password as before, for verification.</small> </div>
+            </div>
+        <button type="submit" href="http://127.0.0.1:8000/">Register</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+dans Settings.py
+------------------
+Ajouter dans INSTALLED_APPS (les app qu'on a créé via python manage.py startapp example:
+'example',
+- - - - - 
+DATABASES = {
+	'default':{
+		'ENGINE': 'django.db.backends.sqlite3',
+		'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	}
+}
+la bd par def est ci dessus, la 1ere ligne est le TYPE de db qu'on utilise (ici sqlite3)
+la 2e ligne est le NOM de notre db, ici db.sqlite3.
+
+views.py
+-----------
+from django.shortcuts import render
+# from django.http 
+
+def index(request):
+	return render(request, 'template.html')
+
+ajouter des pages:
+-  -  -  -  -  -  -  -  -
+def examplepage2(request):
+	return render(request, 'examplepage2.html')
+
+newapp_name (here is example)
+-----------------------------
+dans le dossier de l'app il y a un dossier migrations. créer un dossier templates
+DANS ce dossier templates, créer fichier template.html (ou autre nom mais IDENTIQUE à celui écrit dans VIEWS dans la fonction Index(request))
+
+ajouter la page qu'on a ajouté dans views.py :
+ajouter un fichier html dans templates : examplepage2.html
+
+URLS INTERNES DANS UNE APP :
+CRÉER un Fichier urls.py dans Le Dossier de Notre App (ici example):
+ajouter la page index :
+from django.conf.urls import url
+from . import views
+
+urlpatterns = [
+	url('/', 'views.example', name='index'),
+]
+
+si je veux faire un profil, je fait le template profil.html. je mets ce patern INTERNE ici:
+url('profil/', 'views.example', name='profil'),
+et apres jy accede via localhost:8000/example/Profil 
+
+
+urls.py
+---------
+En fait ce fichier est GENERAL à TOUTES Les APP du Projet,
+donc en faite ici il n'y a que les URL pour accéder À CHAQUE APP,
+par exemple ici, pour acceder à l'appli example,
+dans urlpatterns = [] ajouter l'url pour chaque template representant la 
+PAGE PRINCIPALE de l'APP :
+url('/', 'example.views.index', name='index'),
+
+Si j'ajoue via startapp UNE AUTRE APP genre Gameplays:
+url('/', 'example.views.index'. name='index')
+
+FORMAT D'UNE URL :
+https://www.nomdusite.com/APP/OneOfThePages

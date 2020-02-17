@@ -1,0 +1,1 @@
+dans un <a> mettre target="_blank" pour que le lien souvre dans une nouvelle page

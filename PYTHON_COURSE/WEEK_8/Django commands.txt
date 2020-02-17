@@ -1,0 +1,123 @@
+INSTALLATION
+------------------------
+pip install django
+python -m django --version
+
+Create a New Django Project
+-------------------------------------
+On Windows
+-- -- -- -- -- --
+Create a new project
+Create a virtual environment
+Activate the virtual environment
+Add requirements.txt with this command in your terminal: 
+NUL requirements.txt Django==2.1.4
+
+Install requirements with pip:
+pip install -r requirements.txt
+Create Django project:
+django-admin startproject project_name (no hyphens)
+Create an app next to the project directory:
+python manage.py startapp app_name
+You’re done!
+Some more help
+How to quickly open the current directory from the command prompt?
+start .
+
+- - - - - - - - - - -
+How to quickly open the current directory from the command prompt?
+open .
+
+A command to see the hidden files in the terminal is :
+dir -a
+
+A command to create a directory :
+mkdir name_of_a_directory
+
+A command to get to the previous directory is :
+cd ..
+
+START PROJECT
+----------------------
+$ django-admin startproject mysite
+
+RUNNING SERVER
+-------------------------
+python manage.py runserver
+
+You can change the port using:
+python manage.py runserver 8080
+
+CREATE APP INSIDE PROJECT
+-------------------------------
+$ python manage.py startapp polls
+
+git add store (to commit new files auto-created, ils passeront de rouge à vert)
+
+WRITE VIEW
+----------------
+Inside polls/views.py
+
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Hello, world. You're at the polls index.")
+
+In the polls/urls.py file include the following code:
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+]
+
+The next step is to point the root URLconf at the polls.urls module. In mysite/urls.py, add an import for django.urls.include and insert an include() in the urlpatterns list, so you have:
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path('polls/', include('polls.urls')),
+    path('admin/', admin.site.urls),
+]
+
+The include() function allows referencing other URLconfs. Whenever Django encounters include(), it chops off whatever part of the URL matched up to that point and sends the remaining string to the included URLconf for further processing.
+The idea behind include() is to make it easy to plug-and-play URLs. Since polls are in their own URLconf (polls/urls.py), they can be placed under “/polls/”, or under “/fun_polls/”, or under “/content/polls/”, or any other path root, and the app will still work.
+
+BUILDING VIEW VIA RENDER FUNCTION
+------------------------------------------
+from django.shortcuts import render
+
+def hello(request):
+return render(request, "myapp/template/hello.html", {})
+
+The same way we could pass data to templates in Flask using render_template the same can be acheived in the following way:
+from django.shortcuts import render
+
+def hello(request):
+context = get_data(...) # fetch the data you need
+return render(request, "myapp/template/hello.html", context)
+
+Now you can use the context variable inside the template “hello.html”.
+You
+
+from django.http import HttpResponse
+from django.template import loader
+
+def index(request):
+    template = loader.get_template('polls/index.html')
+    context = # your_data
+    return HttpResponse(template.render(context, request))
+
+NAMESPACING URL
+--------------------------
+In real Django projects, there might be five, ten, twenty apps or more. How does Django differentiate the URL names between them? For example, the polls app has a detail view, and so might an app on the same project that is for a blog. How does one make it so that Django knows which app view to create for a url when using the {% url %} template tag?
+You can use something like inside the template:
+
+{% 'polls:index' %} # if polls is the name of your app
+
+
+-----
+Terminal :
+- - - - - 
+python manage.py sqlmigrate blog 0001 (voir les requetes sql apres avoir fait le model et makemigrations
