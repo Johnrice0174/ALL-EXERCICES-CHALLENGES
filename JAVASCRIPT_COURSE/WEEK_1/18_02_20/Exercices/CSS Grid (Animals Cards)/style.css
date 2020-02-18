@@ -1,0 +1,38 @@
+.container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+.zone {
+	cursor: pointer;
+	/*display: inline-block;*/
+	text-align: center;
+	font-size: 10em;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+	transition: all 0.3s linear;
+}
+
+.zone:hover{
+	opacity: 0.5;
+}
+
+.green {
+	background: green;
+}
+.red {
+	background: red;
+}
+.blue {
+	background: lightblue;
+}
+.yellow{
+	background: yellow;
+}
+.purple{
+	background: purple;
+}
+.brown {
+	background: brown;
+}
