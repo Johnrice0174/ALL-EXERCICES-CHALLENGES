@@ -1,0 +1,38 @@
+/* NAVBAR PART */
+.space {
+	margin-left: 35vh;
+	margin-right: 70vh;
+}
+/* HEADER PART */
+.jumbotron{
+	background-image: url("https://assets.appian.com/uploads/images/home/jpg/poster-banner-home-opt.jpg");
+	background-size: cover;
+	padding-top: 18vh;
+	padding-bottom: 24vh;
+	padding-left: 60vh;
+	padding-right: 60vh;
+}
+
+.display-3 {
+	color: white;
+}
+.jumbotron .container p > a {
+	color: white;
+}
+.jumbotron .btn-link{
+	border: 1px solid white;
+}
+
+/* MAIN PART */
+.container {
+	margin-top: 14vh;
+}
+.row h2 {
+	color: blue;
+}
+.row p > a {
+	color: blue;
+}
+.col-md-4 p {
+	padding-right: 10vh;
+}

@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
+.containerp p{
+	font-weight: normal;
+}
+.containerp{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 40px;
+	padding: 60px 80px 120px 80px;
+}
+.containerp a{
+	background-color: white;
+	border: solid 1px lightgrey;
+	border-radius: 5px;
+	width: 30%;
+	padding: 5px;
+	color: black;
+	font-weight: normal;
+}
+.button img{
+	margin-bottom: 5px;
+}
