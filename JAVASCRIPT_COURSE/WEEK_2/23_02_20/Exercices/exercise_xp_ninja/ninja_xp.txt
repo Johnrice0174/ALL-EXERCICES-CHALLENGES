@@ -1,0 +1,22 @@
+Exercice 1)
+
+var me = [“my”,”favorite”,”color”,”is”,”blue”]
+Write a simple JavaScript program to join all elements of the following array into a string.
+
+console.log(me[0] + ' ' + me[1] + ' ' + me[2] + ' ' + me[3] + ' ' + me[4]);
+//my favorite color is blue
+
+Exercise 2)
+var str1 = 'mix', var str2 = ‘pod' 
+var newWord should be equal to 'pox mid'
+
+var newWord = str1 + ' ' + str2;
+newWord
+//"mix pod"
+
+console.log(str1 + ' ' + str2);
+//mix pod
+
+Exercise 3)
+
+prompt('Please write a verb');

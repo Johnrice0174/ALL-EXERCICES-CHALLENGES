@@ -1,0 +1,136 @@
+JAVASCRIPT TYPES
+------------------
+1. NUMBER :
+4 = whole
+3.4 = fractional
+-2 = negative
+
+console = calculator
+% modulo fct = remainder operator
+(donne le reste d'une fraction)
+ex : 10%3 = combien de fois je peux mettre 3 dans 10 ؟
+je peux le mettre 3 fois et IL ME RESTE 1
+donc 10%3 = 1
+ex : 10%2 = cb de fois 2 dans 10 = 5, IL ME RESTE 0 !
+donc 10%2 = 0
+ex: 10%7 = 3 !
+
+2. STRING :
+"hello" 'hello'  “Hello”
+"awesrtga4eys5u iugnljkhwt,p 4,g4inmaey;t ikm,E,CWUMLh NMTM;MZ,HXDLMRNEik"
+'50' "23"
+
+3. BOOLEAN
+true fasle 1 0
+
+4. NULL
+ex gaming
+ex:
+var currentPlayer = "Lea";
+currentPlayer
+
+4. UNDEFINED
+var a; //undeclared variable
+var a = 0; //declared variable
+
+
+--------------------------
+STRINGS
+"Hello" + "there"
+// "Hellothere"
+
+"Hello" + " " + "there"
+//"Hello there"
+
+"Hello " + "\'litlle\' boy"
+//"Hello 'litlle' boy"
+//guillemets dans le texte!
+
+"TITLE\n\n" + "First Paragraph"
+//resultat=
+"TITLE
+
+First Paragraph"
+//SAUTER des lignes
+
+`My number is ${2+2-5+11}`
+//"My number is 4"
+//for EMBEDED Values 'words ${value}'
+
+'hello'.length
+//5
+var hello = 'hello there';
+//undefined
+hello
+//"hello there"
+// for length
+
+// .indexOf(), .str[index], .substring(start, [length]),
+// .toLowerCase(), .toUpperCase()
+hello.substring(3, [5]);
+//"lo"
+
+hello[0]
+//"h"
+hello[1]
+//"e"
+
+hello.charAt(0).toUpperCase() + hello.slice(1);
+//"Hello there"
+// choose the character by index to UpperCase
+
+true + true
+//2
+false + false
+//0
+etc... true = 1 and false = 0
+
+'Bob' - 'Bill'
+//NaN = Not a Number !!
+
+("blah"+"blah")[6];
+//"a"
+
+'hello'.length % "hi\\".length
+// 5 % 3 = 2
+
+----------------------------
+VARIABLES
+
+Store a value (like a Jars)
+var name = Value
+
+/!\ CASE SENSITIVE :
+firstName, lastName
+var shoppingList = [value1, value2];
+
+var name = "Adrien";
+//undefined
+"My name is " + name;
+//"My name is Adrien"
+name="John";
+//"John"
+"My name is " + name;
+//"My name is John"
+
+---------------------
+Alert, console.log, Prompt, confirm,
+
+prompt('שמי אדריאן יואן');
+//"moi pas comprendre hebreu con#4rd"
+console.log('שמי אדריאן יואן');
+// שמי אדריאן יואן
+alert('Attention!!');
+//
+confirm('VALIDEZ LES CGU !!!');
+//true
+confirm('VALIDEZ LES CGU !!!');
+//false
+
+
+---------------------
+NUMBERS
+
+.isNan(number), .toString(number), .toFixed(number),
+to transform a string to a number :
+number(str), parseInt(str),
