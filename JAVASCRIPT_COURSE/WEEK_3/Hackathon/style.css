@@ -1,0 +1,34 @@
+/*------------ HEADER -----------*/
+.carousel-caption h1{
+  font-size: 4em;
+  font-family: 'Trade Winds', cursive;
+}
+
+/*--------- MAIN --------------*/
+main {
+  background-color: grey;
+}
+
+h3 {
+  text-align: center;
+}
+.iframe{
+  margin-left: 10%;
+}
+
+canvas{
+  margin-left: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-image: url(https://zupimages.net/up/20/10/ds16.jpg);
+}
+
+
+/*--------------FOOTER------------ */
+#sticky-footer {
+  background-color: black;
+  padding: 4px 0px 4px 0px;
+}
+.text-center{
+  padding-left: 35%;
+}

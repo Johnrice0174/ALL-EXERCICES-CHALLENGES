@@ -44,25 +44,26 @@ function plane_ride_cost(city, price){
 	while (true){
 		city = prompt("Where would you like to flight?");
 		if (city === "" || city <= 0 || city > 0){
- 			city = prompt("How many nights you stay?");
+ 			city = prompt("Where would you like to flight?");
  		}
 		else if (city === "London" || city === "london" || city === "londres" || city === "Londres"){
-			var price = 183 + "$";
+			var price = "It will cost you 183$";
 			return alert(price);
 			break;
 		}
 		else if (city === "Paris" || city === "paris"){
-			var price = 220 + "$";
+			var price = "It will cost you 220$";
 			return alert(price);
 			break;
 		}
 		else {
-			var price = 300 + "$";
+			var price = "It will cost you 300$";
 			return alert(price);
 			break;
 		}
 	}
 }
+plane_ride_cost();
 
 // plane_ride_cost();
 
@@ -107,3 +108,5 @@ function trip_cost(night, city, rent, totalCost){
 	return alert("The plane tickets cost: " + plane_ride_cost() + ",$ The car rent cost: " + rentral_car_cost() + ",$ The hotel cost: " + hotel_cost() + "$");
 }
 	alert("The plane tickets cost: " + plane_ride_cost() + ",$ The car rent cost: " + rentral_car_cost() + ",$ The hotel cost: " + hotel_cost() + "$");
+
+trip_cost();
